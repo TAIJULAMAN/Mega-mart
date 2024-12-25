@@ -1,5 +1,9 @@
 import React from "react";
+import TopBar from "./TopBar";
 
 export default function Navbar() {
-  return <div>This is navbar component</div>;
+  return <div>
+    <TopBar />
+    This is navbar component
+    </div>;
 }

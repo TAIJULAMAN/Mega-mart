@@ -1,8 +1,19 @@
+import Banner from "@/components/Banner/Banner";
+import BestDeals from "@/components/BestDeals/BestDeals";
+import Categories from "@/components/Categories/Categories";
+import DailyEssentials from "@/components/DailyEssentials/DailyEssentials";
+import ElectronicBrands from "@/components/ElectronicBrands/ElectronicBrands";
+import TopCategories from "@/components/TopCategories/TopCategories";
 
 export default function Home() {
   return (
-    <div className="">
-     Hey there! This is a aman.
-    </div>
+    <>
+      <Categories />
+      <Banner />
+      <BestDeals />
+      <TopCategories />
+      <ElectronicBrands />
+      <DailyEssentials />
+    </>
   );
 }
