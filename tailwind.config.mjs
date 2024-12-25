@@ -7,9 +7,17 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        hankenGrotesk: ["Hanken Grotesk", "sans-serif"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#008ECC",
+        text: "#666666",
+        heading: "#222222",
+        border: "#EDEDED",
+        bg: "#F5F5F5",
+        bgBlue: "#F3F9FB",
+        green: "##249B3E",
       },
     },
   },
