@@ -9,6 +9,7 @@ const hankenGrotesk = Hanken_Grotesk({
   weight: ["400", "500", "600", "700"],
   display: "swap",
 });
+
 // Define the metadata for the site
 export const metadata = {
   title: "Mega Mart",
@@ -19,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${hankenGrotesk.className} min-h-screen pb-10 antialiased`}
+        className={`${hankenGrotesk.className} min-h-screen pb-10 antialiased overflow-x-hidden`}
       >
         <NavbarContainer />
         <div>{children}</div>

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Container from "@/shared/Container/Container";
 
 // import icons
 import logo from "@/assets/icons/logo.svg";
@@ -9,19 +10,12 @@ import search from "@/assets/icons/search.svg";
 import list from "@/assets/icons/list.svg";
 import user from "@/assets/icons/user.svg";
 import cart from "@/assets/icons/cart.svg";
-import Container from "@/shared/Container/Container";
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   return (
-    <div className="py-3 text-sm text-text text-nowrap border-b-[1px] border-border">
+    <div className="py-3 text-sm text-text text-nowrap border-b-[1px] border-border overflow-x-hidden">
       <Container>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between flex-wrap w-full">
           {/* Logo and Title */}
           <div className="flex items-center gap-2">
             <div className="bg-bgBlue rounded-md p-1">
@@ -29,15 +23,15 @@ export default function Navbar() {
             </div>
             <Link
               href="/"
-              className="text-xl lg:text-2xl font-bold text-primary"
+              className="text-base md:text-xl lg:text-2xl font-bold text-primary"
             >
               MegaMart
             </Link>
           </div>
 
           {/* Navbar Center */}
-          <div className="hidden lg:flex">
-            <div className="mx-auto relative w-[507px]">
+          <div className="hidden lg:flex flex-grow">
+            <div className="mx-auto relative w-full max-w-2xl">
               <Image
                 alt="search"
                 src={search}
@@ -61,7 +55,7 @@ export default function Navbar() {
           </div>
 
           {/* Navbar End */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1 md:gap-3">
             {/* User Login */}
             <div className="flex items-center gap-2">
               <Image alt="user" src={user} width={18} height={18} />
@@ -79,39 +73,6 @@ export default function Navbar() {
               <h2 className="hidden sm:block text-sm lg:text-base font-medium">
                 Cart
               </h2>
-            </div>
-
-            {/* Hamburger Menu for Small Screens */}
-            <div className="relative lg:hidden">
-              <button className="p-2" onClick={toggleMenu}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-primary"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                </svg>
-              </button>
-              {menuOpen && (
-                <ul className="absolute right-0 bg-white rounded-lg shadow-lg z-10 mt-3 w-52 p-2">
-                  <li className="p-2 hover:bg-gray-100 rounded-md">
-                    <a href="#">Item 1</a>
-                  </li>
-                  <li className="p-2 hover:bg-gray-100 rounded-md">
-                    <a href="#">Parent</a>
-                  </li>
-                  <li className="p-2 hover:bg-gray-100 rounded-md">
-                    <a href="#">Item 3</a>
-                  </li>
-                </ul>
-              )}
             </div>
           </div>
         </div>
