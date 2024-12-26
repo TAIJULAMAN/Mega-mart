@@ -4,12 +4,12 @@ import Container from "@/shared/Container/Container";
 const categories = [
   "Groceries",
   "Premium Fruits",
-  "Home & Kitchen",
+  "Kitchen",
   "Fashion",
   "Electronics",
   "Beauty",
-  "Home Improvement",
-  "Sports Toys & Luggage",
+  "Home",
+  "Sports",
 ];
 
 export default function Categories() {

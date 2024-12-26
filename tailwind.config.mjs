@@ -17,7 +17,7 @@ export default {
         border: "#EDEDED",
         bg: "#F5F5F5",
         bgBlue: "#F3F9FB",
-        green: "##249B3E",
+        green: "#249B3E",
       },
     },
   },

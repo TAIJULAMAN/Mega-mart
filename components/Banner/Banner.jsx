@@ -9,7 +9,6 @@ import img from "@/assets/images/img.png";
 import bg1 from "@/assets/images/ellipse 27.png";
 import bg2 from "@/assets/images/ellipse 28.png";
 
-
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
@@ -40,7 +39,7 @@ export default function Banner() {
   ];
 
   return (
-    <div className="relative z-20 max-w-[1600px] my-5 mx-auto bg-[#212844] rounded-xl md:h-[400px] h-[300px]">
+    <div className="relative max-w-[1700px] mx-auto z-20 px-5 md:px-10 lg:px-20 xl:px-28 overflow-x-hidden py-10 bg-[#212844] rounded-xl md:h-[400px] h-[300px]">
       <Swiper
         spaceBetween={20}
         centeredSlides={true}
@@ -58,7 +57,7 @@ export default function Banner() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
         style={{
-          width: "100%",
+          width: "1500px",
           height: "100%",
         }}
       >
@@ -137,7 +136,11 @@ export default function Banner() {
         </svg>
       </div>
       {/* watch bg */}
-      <Image alt="watch bg" src={bg1} className="hidden md:flex absolute right-0 top-0 -z-10" />
+      <Image
+        alt="watch bg"
+        src={bg1}
+        className="hidden md:flex absolute right-0 top-0 -z-10"
+      />
       <Image
         alt="watch bg"
         src={bg2}
