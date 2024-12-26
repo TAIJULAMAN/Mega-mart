@@ -17,7 +17,7 @@ export default function Categories() {
     <section className="w-full py-4 border-b border-border">
       <Container>
         <div className="mx-auto">
-          <div className="flex items-center justify-between flex-wrap">
+          <div className="grid grid-cols-2 md:grid-cols-8 gap-4">
             {categories.map((category, index) => (
               <p
                 key={index}
