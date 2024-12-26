@@ -108,7 +108,7 @@ export default function Footer() {
         </div>
         {/* copy wright part */}
         <p className="text-start md:text-center text-[10px] md:text-[20px] mt-10 py-5 border-t border-[#05ABF3]">
-          © {new Date().getFullYear()} All rights reserved. Reliance Retail Ltd.
+          © 2024 All rights reserved. Reliance Retail Ltd.
         </p>
       </Container>
     </div>
