@@ -46,7 +46,7 @@ export default function BestDeals() {
   return (
     <section className="max-w-[1700px] mx-auto px-5 md:px-10 lg:px-20 xl:px-28 overflow-x-hidden py-10">
       <SectionHeader subtitle="Grab the best deal on" title="Smartphones" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 place-items-center gap-5 my-10 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-5 my-10 mx-auto">
         {bestDeals.map((deal) => (
           <DealCard key={deal._id} deal={deal} />
         ))}
