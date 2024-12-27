@@ -1,3 +1,7 @@
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 // import { dirname } from "path";
 // import { fileURLToPath } from "url";
 // import { FlatCompat } from "@eslint/eslintrc";

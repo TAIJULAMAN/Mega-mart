@@ -28,7 +28,6 @@ export default function ElectronicBrands() {
     <div className="max-w-[1700px] mx-auto px-5 md:px-10 lg:px-20 xl:px-28 overflow-x-hidden py-10 rounded-xl">
       <SectionHeader subtitle="Top" title="Electronics Brands" />
       <Swiper
-        slidesPerView={3}
         loop={true}
         spaceBetween={30}
         centeredSlides={true}
@@ -39,6 +38,17 @@ export default function ElectronicBrands() {
         pagination={{
           clickable: true,
           dynamicBullets: true, // Enables dynamic bullets for better UX
+        }}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
         }}
         modules={[Autoplay, Pagination]}
         className="mySwiper mt-10"
