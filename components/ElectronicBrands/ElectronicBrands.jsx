@@ -10,9 +10,9 @@ import SectionHeader from "@/shared/SectionHeader/SectionHeader";
 import "../../app/globals.css";
 
 // Import images
-import img1 from "@/assets/images/Group 50.png";
-import img2 from "@/assets/images/Group 51.png";
-import img3 from "@/assets/images/Group 52.png";
+import img1 from "@/assets/images/Group50.png";
+import img2 from "@/assets/images/Group51.png";
+import img3 from "@/assets/images/Group52.png";
 
 export default function ElectronicBrands() {
   const slides = [
