@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 
@@ -10,7 +11,7 @@ const DealCard = ({ deal }) => {
   const savedPrice = originalPrice - discountedPrice;
 
   return (
-    <div className="relative bg-white rounded-md shadow-lg border-2 border-border hover:border-primary transition-all duration-200">
+    <div className="relative bg-white rounded-md shadow-lg border border-border hover:border-primary transition-all duration-200">
       {/* Discount Label */}
       {discountPercentage > 0 && (
         <div className="absolute top-0 right-0 bg-primary h-[53px] w-[51px] rounded-tr-md rounded-bl-md text-white text-sm px-2 py-1">
@@ -30,7 +31,7 @@ const DealCard = ({ deal }) => {
       {/* Product Info */}
       <div className="p-5">
         <h3 className="text-base">{deal.title}</h3>
-        <div className="mt-2">
+        <div className="mt-2 space-y-2">
           <div className="flex gap-3 items-center">
             <p className="text-xs text-text font-semibold">
               ₹{discountedPrice.toFixed(2)}

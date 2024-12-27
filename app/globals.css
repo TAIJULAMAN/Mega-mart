@@ -2,20 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .swiper-pagination-bullet {
-    background: #666666;
-    width: 12px;
-    height: 12px;
-    visibility:visible;
-  }
-  
-  .swiper-pagination-bullet-active {
-    background: #007aff;
-    width:30px ;
-    height:12px ;
-    border-radius: 5px;
-    border: 2px solid #007aff;
+  background: #666666;
+  width: 12px;
+  height: 12px;
+  visibility: visible;
+}
 
-  }
-  
+.swiper-pagination-bullet-active {
+  background: #008ecc;
+  width: 30px;
+  height: 12px;
+  border-radius: 5px;
+  border: 2px solid #008ecc;
+}
+*::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #008ecc;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #92d8e6;
+  border-radius: 50px;
+}

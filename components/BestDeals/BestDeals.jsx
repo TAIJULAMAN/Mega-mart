@@ -1,62 +1,46 @@
-"use client";
-
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 import SectionHeader from "@/shared/SectionHeader/SectionHeader";
-import telcard1 from "@/assets/images/img.png";
 import DealCard from "@/shared/DealCard/DealCard";
-// import DealCard from "./DealCard";
-
-// Best deals data
-const bestDeals = [
-  {
-    id: 1,
-    title: "Galaxy S22 Ultra",
-    price: 32999,
-    originalPrice: 74999,
-    discount: 15,
-    img: telcard1,
-  },
-  {
-    id: 2,
-    title: "iPhone 13 Pro",
-    price: 99999,
-    originalPrice: 119999,
-    discount: 10,
-    img: telcard1,
-  },
-  {
-    id: 3,
-    title: "OnePlus 9",
-    price: 49999,
-    originalPrice: 64999,
-    discount: 5,
-    img: telcard1,
-  },
-  {
-    id: 4,
-    title: "Galaxy S22 Ultra",
-    price: 32999,
-    originalPrice: 74999,
-    discount: 20,
-    img: telcard1,
-  },
-  {
-    id: 5,
-    title: "iPhone 13 Pro",
-    price: 99999,
-    originalPrice: 119999,
-    discount: 15,
-    img: telcard1,
-  },
-];
 
 export default function BestDeals() {
+  const [bestDeals, setBestDeals] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchBestDeals = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/bestDeals");
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        setBestDeals(data);
+        setLoading(false);
+      } catch (error) {
+        setError(error);
+        setLoading(false);
+      }
+    };
+
+    fetchBestDeals();
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
   return (
     <section className="max-w-[1700px] mx-auto px-5 md:px-10 lg:px-20 xl:px-28 overflow-x-hidden py-10">
       <SectionHeader subtitle="Grab the best deal on" title="Smartphones" />
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-5 py-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 place-items-center gap-5 my-10 mx-auto">
         {bestDeals.map((deal) => (
-          <DealCard key={deal.id} deal={deal} />
+          <DealCard key={deal._id} deal={deal} />
         ))}
       </div>
     </section>

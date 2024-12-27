@@ -5,13 +5,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Image from "next/image";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+// import images
 import img from "@/assets/images/img.png";
 import bg1 from "@/assets/images/ellipse 27.png";
 import bg2 from "@/assets/images/ellipse 28.png";
-
-// import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import Image from "next/image";
 
 export default function Banner() {
   const slides = [
@@ -169,6 +169,8 @@ export default function Banner() {
           </SwiperSlide>
         ))}
       </Swiper>
+      {/* Pagination element */}
+      <div className="swiper-pagination" />
     </div>
   );
 }

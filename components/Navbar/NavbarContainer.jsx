@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import TopBar from "./TopBar";
 import Navbar from "./Navbar";

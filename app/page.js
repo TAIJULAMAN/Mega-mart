@@ -1,3 +1,4 @@
+"use client"
 import Banner from "@/components/Banner/Banner";
 import BestDeals from "@/components/BestDeals/BestDeals";
 import Categories from "@/components/Categories/Categories";

@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Container from "@/shared/Container/Container";
 import Image from "next/image";
