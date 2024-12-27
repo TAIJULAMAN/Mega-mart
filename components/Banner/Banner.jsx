@@ -10,8 +10,8 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 // import images
 import img from "@/assets/images/img.png";
-import bg1 from "@/assets/images/ellipse27.png";
-import bg2 from "@/assets/images/ellipse28.png";
+import bg1 from "@/assets/images/Ellipse27.png";
+import bg2 from "@/assets/images/Ellipse28.png";
 
 export default function Banner() {
   const slides = [

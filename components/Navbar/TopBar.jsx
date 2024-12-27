@@ -6,7 +6,7 @@ import Image from "next/image";
 // import icons
 import location from "@/assets/icons/Location.svg";
 import truck from "@/assets/icons/truck.svg";
-import discount from "@/assets/icons/discount.svg";
+import discount from "@/assets/icons/Discount.svg";
 
 export default function TopBar() {
   return (
