@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import SectionHeader from "@/shared/SectionHeader/SectionHeader";
 import DealCard from "@/shared/DealCard/DealCard";
@@ -28,11 +28,19 @@ export default function BestDeals() {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="max-w-[1700px] mx-auto px-5 md:px-10 lg:px-20 xl:px-28 overflow-x-hidden py-10">
+        Loading...
+      </div>
+    );
   }
 
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return (
+      <div className="max-w-[1700px] mx-auto px-5 md:px-10 lg:px-20 xl:px-28 overflow-x-hidden py-10">
+        Error: {error.message}
+      </div>
+    );
   }
 
   return (

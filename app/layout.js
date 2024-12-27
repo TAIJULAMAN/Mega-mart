@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
       </head>
       <body
-        className={`${hankenGrotesk.className} min-h-screen pb-10 antialiased overflow-x-hidden`}
+        className={`${hankenGrotesk.className} min-h-screen antialiased overflow-x-hidden`}
       >
         <NavbarContainer />
         <div>{children}</div>
