@@ -17,7 +17,7 @@ export default function DailyEssentials() {
   return (
     <section className="max-w-[1700px] mx-auto px-5 md:px-10 lg:px-20 xl:px-28 overflow-x-hidden pb-20">
       <SectionHeader subtitle="Daily" title="Essentials" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5 mt-10">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5 mt-10">
         {dailyEssentials.map((item) => (
           <div
             key={item.id}
