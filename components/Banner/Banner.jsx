@@ -36,11 +36,34 @@ export default function Banner() {
       discount: "Up to 70% OFF",
       img: img,
     },
+    {
+      id: 4,
+      title: "SMART WEARABLE",
+      description: "Best Deal Online on watches.",
+      discount: "Up to 80% OFF",
+      img: img,
+    },
+    {
+      id: 5,
+      title: "PREMIUM LAPTOPS",
+      description: "Grab the best deals on laptops.",
+      discount: "Up to 50% OFF",
+      img: img,
+    },
+    {
+      id: 6,
+      title: "TRENDY PHONES",
+      description: "Exclusive offers on smartphones.",
+      discount: "Up to 70% OFF",
+      img: img,
+    },
   ];
 
   return (
     <div className="max-w-[1700px] mx-auto  px-5 md:px-10 lg:px-20 xl:px-28 overflow-x-hidden py-10  rounded-xl md:h-[400px] h-[300px]">
       <Swiper
+        slidesPerView={1}
+        loop={true}
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{

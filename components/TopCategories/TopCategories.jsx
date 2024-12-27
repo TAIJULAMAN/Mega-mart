@@ -27,7 +27,7 @@ export default function TopCategories() {
               <Image
                 src={category.img}
                 alt={category.name}
-                className="w-16 h-16 object-cover"
+                className="w-20 h-20 object-cover"
               />
             </div>
             <p className="text-text text-center text-lg font-medium leading-5">
