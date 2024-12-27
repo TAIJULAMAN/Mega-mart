@@ -4,7 +4,7 @@ import Container from "@/shared/Container/Container";
 import Image from "next/image";
 
 // import icons
-import location from "@/assets/icons/location.svg";
+import location from "@/assets/icons/Location.svg";
 import truck from "@/assets/icons/truck.svg";
 import discount from "@/assets/icons/discount.svg";
 

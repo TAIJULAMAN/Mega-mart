@@ -6,7 +6,7 @@ import Container from "@/shared/Container/Container";
 
 // import icons
 import logo from "@/assets/icons/logo.svg";
-import search from "@/assets/icons/search.svg";
+import search from "@/assets/icons/Search.svg";
 import list from "@/assets/icons/list.svg";
 import user from "@/assets/icons/user.svg";
 import cart from "@/assets/icons/cart.svg";

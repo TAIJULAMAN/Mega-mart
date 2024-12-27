@@ -7,7 +7,7 @@ import Link from "next/link";
 // import icons
 import footerbg from "@/assets/icons/footerbg.svg";
 import whatsapp from "@/assets/icons/ab.svg";
-import call from "@/assets/icons/call.svg";
+import call from "@/assets/icons/Call.svg";
 
 // import photos
 import google from "@/assets/images/googlePlay.png";
